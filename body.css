@@ -1,0 +1,156 @@
+body{
+    background-color: rgb(240, 242, 245);
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left{
+    display: inline-flex;
+    flex-direction: column;
+}
+.coinfo{
+    margin-top: 160px; ;
+    margin-bottom: 0;
+    margin-left: 150px;
+    display: inline-block;
+}
+.logo{
+    padding-bottom: 5px;
+    margin-bottom: -38px;
+}
+.misstate{
+     
+    margin-bottom: 0;
+    margin-left: 30px;
+    display: inline-block;
+    width: 490px;
+}
+.image{
+    height: 105px;
+}
+.statement{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+}
+.right{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 135px;
+}
+.signup-in{
+    display: inline-block;
+    background-color: white;
+    height: 315px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px rgb(192, 190, 190);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+#email{
+    height: 45px;
+    width: 350px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    border-style: double;
+    border-color: rgb(246, 246, 230);
+}
+#email:active{
+    border-style: double;
+    border-color: aquamarine;
+}
+#email::placeholder{
+    font-size: 17px;
+    color: grey
+}
+#password{
+    height: 42px;
+    width: 350px;
+    border-style: double;
+    border-color: rgb(246, 246, 230);
+    border-radius: 7px;
+    margin-bottom: 14px;
+}
+#password::placeholder{
+    font-size: 17px;
+    color: grey;
+}
+.blue-button{
+    background-color: rgb(24, 119, 242);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    width: 360px;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+.blue-button:hover{
+    cursor: pointer;
+    background-color: rgb(30, 130, 250);
+    transition: 0.05s;
+}
+.forgotten{
+    text-align: center;
+    margin-bottom: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.forgotten:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.fp{
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+}
+.hr{
+    margin-bottom: 22px;
+}
+.newAccount{
+    text-align: center;
+}
+.Create{
+    background-color: rgb(66, 183, 42);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+}
+.Create:hover{
+    background-color: rgb(66, 183, 60);
+    cursor: pointer;
+    transition: 0.05s;
+}
+.message{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+.page{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page:hover{
+    text-decoration: underline;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
